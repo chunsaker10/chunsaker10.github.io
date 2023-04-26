@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Work Out Generator</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="top_bar">
+                <h1 id="my-heading">Workout Generator</h1><hr><br>
+                <h3>Build Your Dream Workout</h3>
+                <div id="login_form">   
+                    <div class="container">
+                        <input class = "form_spacing input_spacing" type="email" placeholder="Enter Username" id="email_one" required><br>
+                    
+                        <input class = "form_spacing input_spacing" type="password" placeholder="Enter Password" id="psw_one" required><br>
+                    
+                        <button class = "form_spacing login_submit" id="login">Login</button><br>
+                        <p id="log_in_form_center" class = "form_spacing">or</p>
+                        <button class = "form_spacing login_submit" id="sign_up">Sign Up</button><br>
+                    </div>
+                </div>
+                <div id="signup_form">   
+                    <div class="container">
+                        <input class = "form_spacing input_spacing" type="email" placeholder="Enter Email" id="email" required><br>
+
+                        <input class = "form_spacing input_spacing" type="text" placeholder="Enter First Name" id="fname" required><br>
+
+                        <input class = "form_spacing input_spacing" type="text" placeholder="Enter Last Name" id="lname" required><br>
+
+                        <input class = "form_spacing input_spacing" type="password" placeholder="Enter Password"  id="psw" required><br>
+                        <button class = "form_spacing login_submit" id="sign_up_submit">Sign Up</button><br>
+                        <button class = "form_spacing login_submit" id="back_button">Back</button>
+                    </div>
+                </div>
+            </div>
+            <div id="generated">
+                <h2>Pick a muscle group:</h2><br>
+                <h3>Options: Legs, Biceps, Chest, Triceps, Shoulders</h3><br>
+                <input type="text" id="workout-input" class = "input_styling" placeholder="enter workout"><br>
+                <input type="number" id="workout-rating" class = "input_styling" placeholder="enter workout rating"><br>
+                <input type="text" id="workout-difficulty" class = "input_styling" placeholder="enter workout difficulty"><br>
+                <input type="number" id="workout-reps" class = "input_styling" placeholder="enter workout reps"><br>
+                <input type="number" id="workout-sets" class = "input_styling" placeholder="enter workout sets"><br>
+                <button id="generate-workout-button">Generate Workout</button>
+                <span id="random-friend-name"></span>
+                <div id="workout-list">
+                    
+                </div>
+            </div>
+            <div id="feedback">
+                <h2 class="white-text">Any Feedback?</h2><br><hr class="hr_yellow"><br>
+                <input type="text" id="feedback-input">
+                <button id="submit-feedback-button">Submit</button><br>
+                <div id="feedback-response">
+                </div>
+            </div>
+                <div id="footer">
+                    <footer>
+                        <div id="footer_box">
+                            <h2 id="changing_element">Start Your Workout</h2>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        <script src="messageLog.js"></script>
+    </body>
+</html>
